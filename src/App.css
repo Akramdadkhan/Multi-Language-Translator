@@ -20,9 +20,25 @@ body {
   border-radius: 7px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
 }
+@media screen and (max-width: 600px) {
+  .container {
+    min-width:100%;
+    width: 25rem;
+    padding: 20px;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
+  }
+}
 .wrapper {
   border-radius: 5px;
   border: 1px solid #ccc;
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
 }
 .wrapper .text-input {
   display: flex;
@@ -58,6 +74,19 @@ li,
   list-style: none;
   padding: 12px 15px;
 }
+@media screen and (max-width: 600px) {
+  .controls .row .icons {
+    width: 20%;
+  }
+  .controls .row .icons i {
+    width: 10px;
+    color: #adadad;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    justify-content: center;
+  }
+}
 .controls .row .icons {
   width: 38%;
 }
@@ -68,6 +97,28 @@ li,
   cursor: pointer;
   transition: transform 0.2s ease;
   justify-content: center;
+}
+@media screen and (max-width: 600px) {
+ 
+  .controls .row .icons i {
+    width: 1.5rem;
+    color: #adadad;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+ 
+  .controls .row select {
+    color: #333;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: none;
+    padding-left: 5px;
+  }
 }
 .controls .row.from .icons {
   padding-right: 15px;
@@ -81,7 +132,6 @@ li,
   color: #333;
   border: none;
   outline: none;
-  font-size: 18px;
   background: none;
   padding-left: 5px;
 }
@@ -109,6 +159,14 @@ li,
   cursor: pointer;
   font-size: 16px;
   transition: transform 0.2s ease;
+}
+@media screen and (max-width: 600px) {
+  .controls .exchange {
+    color: #adadad;
+    cursor: pointer;
+    font-size: 10px;
+    transition: transform 0.2s ease;
+  }
 }
 .controls i:active {
   transform: scale(0.9);
